@@ -1,0 +1,9 @@
+{% if all_exam_list %}
+    <ul>
+    {% for exam in all_exam_list %}
+        <li><a href="{% url 'jiaodaschool:exm_detail' exam.id%}">{{ exam.lable }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Examine are available.</p>
+{% endif %}
