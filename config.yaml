@@ -1,5 +1,5 @@
-name: pylabs
-version: 9
+name: hectorsity
+version: 1
 
 libraries:
 - name: "django"
