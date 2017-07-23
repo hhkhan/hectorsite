@@ -1,0 +1,20 @@
+<h1>{{ examine.lable }}</h1>
+
+<table border="1">
+    <tr>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>分数</th>
+        <th>排名</th>
+    </tr>
+    {% for score, idx in dct_stu_order.items %}
+    <tr>
+        <td>{{ score.student.stu_id }}</td>
+        <td>{{ score.student.stu_name }}</td>
+        <td>{{ score.score }}</td>
+        <td>{{ idx }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
